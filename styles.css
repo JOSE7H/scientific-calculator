@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(223, 213, 213);
+}
+
+.calculator {
+    background-color: grey;
+    border: 1px  rgb(15, 13, 13);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.calculator #display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background: whitesmoke;
+    color:black;
+    height: 120px;
+    font-weight: bold;
+    border-radius: 10PX;
+    border-color:black;
+}
+
+.calculator .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 10px;
+    
+    
+    
+}
+
+.calculator .keys button {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color:black;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: white;
+    font-weight:400;
+}
+
+.calculator .keys button:hover {
+    background-color: rgb(224, 194, 168);
+}
+#ansButton{
+background-color:rgba(56, 17, 197, 0.801);
+color: black;
+}
+#delButton{
+    background-color: rgb(173, 58, 129);
+    color:#200707
+}
+
+
+#modeButton{
+    background-color: rgb(92, 16, 16);
+    color: white;
+    font-weight: bold;
+}
+#acButton{
+    background-color: rgb(21, 23, 160);
+    color:white;
+    font-weight: bold;
+}
+.calculator .keys
+button:nth-child(n+13):nth-child(-n+22){
+    background-color:rgb(155, 147, 199);
+     color:black;
+      font-weight: bold;
+    }
+    .calculator .keys button:active{
+        transform: translateY(1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
